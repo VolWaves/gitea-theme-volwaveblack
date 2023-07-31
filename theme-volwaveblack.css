@@ -409,6 +409,10 @@ pre.code-block {
 	border: 1px solid var(--color-secondary-alpha-80) !important;
 	margin: 0.2em;
 }
+#topic_edit {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 /* --------------------- Modified end ---------------------- */
 
 .ui.link.list .item,
