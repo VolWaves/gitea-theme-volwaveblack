@@ -413,6 +413,10 @@ pre.code-block {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.ui.divider {
+	height: 1px;
+	border: none !important;
+}
 /* --------------------- Modified end ---------------------- */
 
 .ui.link.list .item,
