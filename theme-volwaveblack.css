@@ -209,21 +209,21 @@
 }
 
 :root {
-	--color-primary: #ccc;
-	--color-primary-dark-1: #c5c5c5;
-	--color-primary-dark-2: #bebebe;
-	--color-primary-dark-3: #b7b7b7;
-	--color-primary-dark-4: #b0b0b0;
-	--color-primary-dark-5: #a9a9a9;
-	--color-primary-dark-6: #a2a2a2;
-	--color-primary-dark-7: #9b9b9b;
-	--color-primary-light-1: #d3d3d3;
-	--color-primary-light-2: #d9d9d9;
-	--color-primary-light-3: #e0e0e0;
-	--color-primary-light-4: #e7e7e7;
-	--color-primary-light-5: #eeeeee;
-	--color-primary-light-6: #f5f5f5;
-	--color-primary-light-7: #fff;
+	--color-primary: #236493;
+	--color-primary-dark-1: #2870a3;
+	--color-primary-dark-2: #2d7cb3;
+	--color-primary-dark-3: #2b86bf;
+	--color-primary-dark-4: #2790cc;
+	--color-primary-dark-5: #21a4e5;
+	--color-primary-dark-6: #1bb8fe;
+	--color-primary-dark-7: #15ccff;
+	--color-primary-light-1: #265a82;
+	--color-primary-light-2: #275071;
+	--color-primary-light-3: #27455e;
+	--color-primary-light-4: #263a4c;
+	--color-primary-light-5: #252f3a;
+	--color-primary-light-6: #242428;
+	--color-primary-light-7: #231916;
 	--color-primary-alpha-10: #afb0b119;
 	--color-primary-alpha-20: #afb0b133;
 	--color-primary-alpha-30: #afb0b14b;
@@ -298,10 +298,11 @@
 	--color-input-background: #000;
 	--color-input-border: #454545;
 	--color-input-border-hover: #4e5465;
-	--color-navbar: #060606;
+	--color-nav-bg: #060606;
+	--color-nav-hover-bg: #265a82;
 	--color-light: #00000028;
 	--color-light-border: #ffffff28;
-	--color-hover: #ffffff10;
+	--color-hover: #265a8280;
 	--color-active: #25272d;
 	--color-menu: #060606;
 	--color-card: #060606;
@@ -317,8 +318,26 @@
 	--color-editor-line-highlight: var(--color-primary-light-5);
 	--color-project-board-bg: var(--color-secondary-light-2);
 	--color-markup-code-block: #0b1629 !important;
+	--color-label-bg: #5a5a5a;
+	--color-label-hover-bg: #21a4e590;
+	--color-label-active-bg: #21a4e5;
 }
-
+.ui.dropdown .menu, .ui.upward.dropdown>.menu, .ui.menu .dropdown.item .menu, .ui.selection.active.dropdown .menu, .ui.upward.selection.dropdown .menu, .ui.selection.active.dropdown:hover .menu, .ui.upward.active.selection.dropdown:hover .menu {
+	box-shadow: 3px 6px 20px 0px #578dff75;
+}
+.ui.label, .ui.menu .item>.label {
+    background: #0000;
+	border: 1px solid var(--color-label-hover-bg);
+    color: var(--color-text-light-3);
+}
+.ui.labels a.label:hover, a.ui.label:hover {
+    background: var(--color-label-hover-bg);
+    color: var(--color-label-text);
+}
+.ui.menu .dropdown.item .menu {
+    background-color: #0b1629 !important;
+    border: 1px solid var(--color-blue) !important;
+}
 ::-webkit-calendar-picker-indicator {
 	filter: invert(0.8);
 }
@@ -412,6 +431,10 @@ pre.code-block {
 #topic_edit {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.ui.divider {
+	height: 1px;
+	border: none !important;
 }
 /* --------------------- Modified end ---------------------- */
 
