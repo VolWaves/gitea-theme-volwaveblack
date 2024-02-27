@@ -1,5 +1,5 @@
 /* modified from theme-pitchblack.css */
-* {
+html {
 	scrollbar-color: auto;
 	scrollbar-gutter: stable both-edges;
 	scrollbar-width: 5px;
