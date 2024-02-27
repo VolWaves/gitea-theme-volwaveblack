@@ -1,4 +1,9 @@
 /* modified from theme-pitchblack.css */
+* {
+	scrollbar-color: auto;
+	scrollbar-gutter: stable both-edges;
+	scrollbar-width: 5px;
+}
 .chroma .hl {
 	background-color: #3f424d;
 }
@@ -322,21 +327,29 @@
 	--color-label-hover-bg: #21a4e590;
 	--color-label-active-bg: #21a4e5;
 }
-.ui.dropdown .menu, .ui.upward.dropdown>.menu, .ui.menu .dropdown.item .menu, .ui.selection.active.dropdown .menu, .ui.upward.selection.dropdown .menu, .ui.selection.active.dropdown:hover .menu, .ui.upward.active.selection.dropdown:hover .menu {
+.ui.dropdown .menu,
+.ui.upward.dropdown > .menu,
+.ui.menu .dropdown.item .menu,
+.ui.selection.active.dropdown .menu,
+.ui.upward.selection.dropdown .menu,
+.ui.selection.active.dropdown:hover .menu,
+.ui.upward.active.selection.dropdown:hover .menu {
 	box-shadow: 3px 6px 20px 0px #578dff75;
 }
-.ui.label, .ui.menu .item>.label {
-    background: #0000;
+.ui.label,
+.ui.menu .item > .label {
+	background: #0000;
 	border: 1px solid var(--color-label-hover-bg);
-    color: var(--color-text-light-3);
+	color: var(--color-text-light-3);
 }
-.ui.labels a.label:hover, a.ui.label:hover {
-    background: var(--color-label-hover-bg);
-    color: var(--color-label-text);
+.ui.labels a.label:hover,
+a.ui.label:hover {
+	background: var(--color-label-hover-bg);
+	color: var(--color-label-text);
 }
 .ui.menu .dropdown.item .menu {
-    background-color: #0b1629 !important;
-    border: 1px solid var(--color-blue) !important;
+	background-color: #0b1629 !important;
+	border: 1px solid var(--color-blue) !important;
 }
 ::-webkit-calendar-picker-indicator {
 	filter: invert(0.8);
@@ -421,16 +434,16 @@ div.container > div.news:hover {
 }
 
 pre.code-block {
-    border: 1px solid var(--color-secondary-alpha-80) !important;
-    border-radius: 0.28571429rem;
+	border: 1px solid var(--color-secondary-alpha-80) !important;
+	border-radius: 0.28571429rem;
 }
 .markup code:not(.language-shell) {
 	border: 1px solid var(--color-secondary-alpha-80) !important;
 	margin: 0.2em;
 }
 #topic_edit {
-    margin-top: 5px;
-    margin-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .ui.divider {
 	height: 1px;
