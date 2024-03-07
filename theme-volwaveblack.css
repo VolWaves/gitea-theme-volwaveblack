@@ -433,11 +433,15 @@ div.container > div.news:hover {
 	border: 1px solid var(--color-blue) !important;
 }
 
+.markup code,
+pre.code-block {
+	color: #e2782b;
+}
 pre.code-block {
 	border: 1px solid var(--color-secondary-alpha-80) !important;
 	border-radius: 0.28571429rem;
 }
-.markup code:not(.language-shell) {
+.markup code:not(.language-text):not(.language-shell) {
 	border: 1px solid var(--color-secondary-alpha-80) !important;
 	margin: 0.2em;
 }
@@ -1233,7 +1237,7 @@ textarea:focus {
 
 .markup a,
 .ui.breadcrumb a {
-	color: var(--color-primary-light-7);
+	color: var(--color-primary);
 	cursor: pointer;
 	text-decoration: none;
 	border-bottom: 1px solid var(--color-primary);
@@ -1242,11 +1246,11 @@ textarea:focus {
 
 .markup a:hover,
 .ui.breadcrumb a:hover {
-	color: #000;
+	color: #fff;
 	cursor: pointer;
 	text-decoration: none;
-	background: #fff;
-	background-color: #fff;
+	border-radius: 0.28571429rem;
+	background: var(--color-primary);
 }
 
 .markup .anchor {
@@ -1262,5 +1266,20 @@ textarea:focus {
 
 .mtk1,
 .mtk10 {
-	color: #6d7178 !important;
+	color: #9ea5b2 !important;
+}
+.mtk6 {
+	color: #d69863 !important;
+}
+.mtk21 {
+	color: #dc6161 !important;
+}
+.mtk24 {
+	color: #628ba6 !important;
+}
+.monaco-editor,
+.monaco-diff-editor {
+	--vscode-editorLineNumber-foreground: #5f7189 !important;
+	--vscode-editorLineNumber-activeForeground: #4684e3 !important;
+	--vscode-editorActiveLineNumber-foreground: #4684e3 !important;
 }
