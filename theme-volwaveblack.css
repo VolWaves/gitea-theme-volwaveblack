@@ -214,6 +214,8 @@ html {
 }
 
 :root {
+	color-scheme: dark;
+	--is-dark-theme: true;
 	--color-primary: #236493;
 	--color-primary-dark-1: #2870a3;
 	--color-primary-dark-2: #2d7cb3;
