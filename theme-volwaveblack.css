@@ -313,7 +313,7 @@ html {
 	--color-active: #25272d;
 	--color-menu: #060606;
 	--color-card: #060606;
-	--color-markdown-table-row: #ffffff06;
+	--color-markdown-table-row: #4545454b;
 	--color-markdown-code-block: #121314;
 	--color-button: #070707;
 	--color-code-bg: #060606;
@@ -1285,3 +1285,37 @@ textarea:focus {
 	--vscode-editorLineNumber-activeForeground: #4684e3 !important;
 	--vscode-editorActiveLineNumber-foreground: #4684e3 !important;
 }
+
+.markup table {
+    background-color: var(--color-secondary-alpha-10);
+    border: 1px solid var(--color-secondary-alpha-80);
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.markup table thead {
+    background-color: var(--color-secondary-alpha-80);
+    border-bottom: 1px solid var(--color-secondary-dark-8) !important;
+}
+
+.markup table tr:nth-child(even) {
+    background-color: var(--color-secondary-alpha-30);
+}
+
+
+.markup table tbody tr:hover {
+    background-color: var(--color-primary-light-5);
+}
+
+.markup table th,.markup table td {
+    border: none !important;
+}
+
+.markup table tr:not(:first-child) {
+    border-top: 1px solid var(--color-secondary-alpha-80) !important;
+}
+
+.markup table th:not(:first-child),.markup table td:not(:first-child) {
+    border-left: 1px solid var(--color-secondary-alpha-80) !important;
+}
+
