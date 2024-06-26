@@ -336,7 +336,9 @@ html {
 .ui.upward.selection.dropdown .menu,
 .ui.selection.active.dropdown:hover .menu,
 .ui.upward.active.selection.dropdown:hover .menu {
+    	background-color: #0b1629a0 !important;
 	box-shadow: 3px 6px 20px 0px #578dff75;
+    	backdrop-filter: blur(5px);
 }
 .ui.label,
 .ui.menu .item > .label {
@@ -350,8 +352,7 @@ a.ui.label:hover {
 	color: var(--color-label-text);
 }
 .ui.menu .dropdown.item .menu {
-	background-color: #0b1629 !important;
-	border: 1px solid var(--color-blue) !important;
+    border: 1px solid var(--color-blue) !important;
 }
 ::-webkit-calendar-picker-indicator {
 	filter: invert(0.8);
@@ -405,18 +406,11 @@ div.container > div.news:hover {
 .ui.grid > .wide.column {
 	padding-bottom: 0 !important;
 }
-
-.feeds .list ul li {
-	border-radius: 0.28571429rem;
-	border: 1px solid var(--color-secondary-alpha-80) !important;
-	background-color: var(--color-secondary) !important;
-}
 .feeds .list ul li.private {
 	background-color: var(--color-secondary);
 }
 .feeds .list ul li:hover {
 	background-color: #0b1629 !important;
-	border: 1px solid var(--color-blue) !important;
 }
 .feeds .list ul li:not(:last-child) {
 	margin-bottom: 2px;
